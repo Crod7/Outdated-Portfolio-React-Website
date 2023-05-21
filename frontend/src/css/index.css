@@ -3,7 +3,9 @@
 
 /* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #d7dedf;
+  --secondary: #869db3;
+  --button: #547EAB;
   --error: #e7195a;
 }
 body {
@@ -11,13 +13,81 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
-header {
-  background: #fff;
+
+/* Home Page ======================================================================*/
+.homepage-container {
+  background: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  }
+  
+.intro-container {
+  flex: 1;
+  max-width: 600px;
 }
+  
+.image-container {
+  flex: 1;
+  margin-left: 40px;
+}
+  
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+/*Projects Select Page =====================================================================*/
+#projects {
+  padding: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: var(--secondary);
+  padding: 20px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-details h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.project-details p {
+  margin-bottom: 10px;
+}
+
+.project-details a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* Outer Navbar =============================================================== */
+header {
+  padding: 20px 200px 20px 200px;
+}
+/* Inner Navbar */
 header .container {
+  border-bottom: solid;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,111 +101,14 @@ header a {
   padding: 20px;
   margin: 0 auto;
 }
-
-/* homepage */
-.home {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 100px;
-}
-.transaction-details {
-  background: #fff;
-  border-radius: 4px;
-  margin: 20px auto;
-  padding: 20px;
-  position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
-}
-.transaction-details h4 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
-  color: var(--primary);
-}
-.transaction-details p {
-  margin: 0;
-  font-size: 0.9em;
-  color: #555;
-}
-.transaction-details span {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  background: #f1f1f1;
-  padding: 6px;
-  border-radius: 50%;
-  color: #333;
-}
-
-/* transaction form */
-label, input {
-  display: block;
-}
-input {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-form button {
-  background: var(--primary);
-  border: 0;
-  color: #fff;
-  padding: 10px;
-  font-family: "Poppins";
-  border-radius: 4px;
-  cursor: pointer;
-}
-div.error {
-  padding: 10px;
-  background: #ffefef;
-  border: 1px solid var(--error);
-  color: var(--error);
-  border-radius: 4px;
-  margin: 20px 0;
-}
-input.error{
-  border: 1px solid var(--error)
-}
-/* navbar */
-nav {
+.container {
   display: flex;
   align-items: center;
-}
-nav a {
-  margin-left: 10px;
-}
-nav button {
-  background: #fff;
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-family: "Poppins";
-  cursor: pointer;
-  font-size: 1em;
-  margin-left: 10px;
-}
-.navButton {
-  background: #fff;
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-family: "Poppins";
-  cursor: pointer;
-  font-size: 1em;
-  margin-left: 10px;
+  justify-content: space-between;
 }
 
-/* auth forms */
-form.signup, form.login {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
+.logo {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
 }
