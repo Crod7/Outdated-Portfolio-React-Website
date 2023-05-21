@@ -3,11 +3,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    margin: 10px 16px 150px 16px;
+    padding: 0px;
+    margin: 0px 16px 150px 16px;
   }
 .homepage-name {
+  color: var(--titleColor);
   font-size: 90px;
+  margin: 0px;
+}
+.homepage-subtitle {
+  color: var(--titleColor);
+  font-size: 35px;
+  text-align: right;
+  margin: 0px;
 }
     
     

@@ -10,17 +10,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
 :root {
-  --primary: #d7dedf;
+  --primary: #00d0eb;
   --secondary: #cecece;
   --button: #547EAB;
   --error: #e7195a;
   --textColor: rgb(0, 0, 0);
-  --boxShadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
-  --orangeTextShadow: 2px 4px 8px rgb(255, 183, 0);
+  --titleColor: white;
+  --boxShadow: 4px 8px 18px rgba(255, 255, 255, 0.5);
 
 }
 body {
-  background: rgb(249, 249, 249);
+  background: rgb(14, 14, 14);
   margin: 0;
   font-family: "Poppins";
   color: var(--textColor);

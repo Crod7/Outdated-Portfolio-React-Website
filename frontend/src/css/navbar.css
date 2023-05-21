@@ -7,30 +7,32 @@
 }
 @media (min-width: 456px) {
   header {
-    padding: 20px 200px 20px 200px;
+    padding: 20px 12% 20px 12%;
     min-width: 400px;
   }
 }
 
 header .navContainer {
   border-bottom: solid;
+  border-color: var(--titleColor);
+  min-width: 400px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 60px;
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
 }
 .logo {
   border: solid;
-  padding: 0px 14px 4px 14px;
-  border-radius: 12px;
+  border-color: rgba(255, 255, 255, 0);
   text-decoration: none;
-  color: var(--textColor);
+  padding: 0px 20px 0px 20px;
+  color: rgb(59, 223, 59);
   font-size: 16px;
-  margin: 4px;
+  margin: 12px;
 }
 .logo:hover{
-  background-color: var(--secondary);
-  text-shadow: var(--orangeTextShadow);
+  border: solid;
+  border-radius: 12px;
 }

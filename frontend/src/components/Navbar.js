@@ -12,22 +12,22 @@ const Navbar = () => {
       <div className="navContainer">
         {(
           <Link to="/" className="logo">
-            <h2>Home</h2>
+            <h2>// Home</h2>
           </Link>
         )}
         {(
           <Link to="/about" className="logo">
-            <h2>About</h2>
+            <h2>// About</h2>
           </Link>
         )}
         {(
           <Link to="/resume" className="logo">
-            <h2>Resume</h2>
+            <h2>// Resume</h2>
           </Link>
         )}
         {(
           <Link to="/contact" className="logo">
-            <h2>Contact Me</h2>
+            <h2>// Contact</h2>
           </Link>
         )}
       </div>

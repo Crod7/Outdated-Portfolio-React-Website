@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer-section left-section">
-            <h3>Left Section</h3>
+            <h3>Links</h3>
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -16,7 +16,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="footer-section right-section">
-            <h3>Right Section</h3>
+            <h3>Check me out</h3>
             <ul>
                 <li>
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer">
@@ -29,9 +29,6 @@ const Footer = () => {
                         <img src={linkedinIcon} alt="GitHub" />
                     </a>
                      Linkedin              
-                </li>
-                <li>
-                    <i className="fab fa-twitter"></i> Twitter
                 </li>
             </ul>
         </div>

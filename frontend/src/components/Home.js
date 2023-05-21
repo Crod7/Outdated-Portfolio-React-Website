@@ -37,11 +37,11 @@ const Home = () => {
     <div className="homepage-container">
         <div>
             <h1 className="homepage-name">Carlos Rodriguez</h1>
-            <p>Hi, my name is Carlos Rodriguez, a software developer passionate about creating amazing applications.</p>
+            <h2 className="homepage-subtitle">Software Developer</h2>
         </div>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 className="title">Projects</h2>
             <div className="projects-container">
                 {projects.map((project) => (
                 <div key={project.id} className="project-card">
@@ -56,6 +56,9 @@ const Home = () => {
                 ))}
             </div>
         </section>
+        <div>
+            <h2 className="homepage-subtitle">About Me</h2>
+        </div>
     </div>
 
   )
