@@ -1,17 +1,23 @@
 import React from "react";
-import '../css/resume.css';
 
 const Resume = () => {
     return (
       <div className="resume-container">
+        <h1>Resume</h1>
         <div className="section-container">
           <h1>Carlos Rodriguez</h1>
           <p>
-            Phone: 323-622-5469 || Online Portfolio:{' '}
+            Phone: 323-622-5469
+          </p>
+          <p>
+            Online Portfolio:{' '}
             <a href="https://www.CarlosRodriguez.com">https://www.CarlosRodriguez.com</a>
           </p>
           <p>
-            Email: cRodriguezYt10@gmail.com || GitHub:{' '}
+            Email: cRodriguezYt10@gmail.com
+          </p>
+          <p> 
+            GitHub:{' '}
             <a href="https://github.com/Crod7">https://github.com/Crod7</a>
           </p>
           <p>
@@ -67,7 +73,6 @@ const Resume = () => {
         <div className="section-container">
           <h2>Technical Skills</h2>
           <ul>
-            <li>Machine Learning:</li>
             <li>Programming Technologies: Java, Python</li>
             <li>Graphical User Interface Technologies: JavaFx</li>
             <li>Programming Technologies, Front End: React, JavaScript, HTML, CSS</li>

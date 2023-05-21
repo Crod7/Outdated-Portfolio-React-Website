@@ -5,8 +5,9 @@
   }
   
   .section-container {
-    background-color: #0d8a32;
+    background-color: var(--secondary);
     border-radius: 10px;
+    box-shadow: var(--boxShadow);
     padding: 20px;
     margin-bottom: 20px;
   }
