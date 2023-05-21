@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 //pages and componenets
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Resume from './components/Resume'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -24,6 +25,7 @@ function App() {
               <Route path="/contact" element={<Contact />}/>
             </Routes>
           </div>
+        <Footer />
         </BrowserRouter>
     </div>
   );

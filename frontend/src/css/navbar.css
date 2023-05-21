@@ -22,11 +22,15 @@ header .navContainer {
   justify-content: space-between;
 }
 .logo {
+  border: solid;
+  padding: 0px 14px 4px 14px;
+  border-radius: 12px;
   text-decoration: none;
   color: var(--textColor);
   font-size: 16px;
-  margin: 10px;
+  margin: 4px;
 }
 .logo:hover{
+  background-color: var(--secondary);
   text-shadow: var(--orangeTextShadow);
 }
