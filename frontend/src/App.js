@@ -2,10 +2,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 //pages and componenets
-import Home from './pages/Home'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
-import Projects from './components/Projects';
-import Resume from './components/Resume';
+import Resume from './components/Resume'
+import About from './components/About'
+import Contact from './components/Contact'
 
 
 
@@ -18,8 +19,9 @@ function App() {
           <div className='pages'>
             <Routes>
               <Route path="/" element={<Home />}/>
-              <Route path="/projects" element={<Projects />}/>
               <Route path="/resume" element={<Resume />}/>
+              <Route path="/about" element={<About />}/>
+              <Route path="/contact" element={<Contact />}/>
             </Routes>
           </div>
         </BrowserRouter>

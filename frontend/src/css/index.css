@@ -2,6 +2,8 @@
 @import "projects.css";
 @import "home.css";
 @import "resume.css";
+@import "about.css";
+@import "contact.css";
 
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
@@ -12,7 +14,9 @@
   --button: #547EAB;
   --error: #e7195a;
   --textColor: rgb(0, 0, 0);
-  --boxShadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  --boxShadow: 2px 4px 14px rgba(0, 0, 0, 0.5);
+  --orangeTextShadow: 2px 4px 8px rgb(255, 183, 0);
+
 }
 body {
   background: rgb(249, 249, 249);
