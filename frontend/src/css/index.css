@@ -4,39 +4,35 @@
 /* layout */
 :root {
   --primary: #d7dedf;
-  --secondary: #869db3;
+  --secondary: #764715;
   --button: #547EAB;
   --error: #e7195a;
+  --textColor: rgb(0, 0, 0);
 }
 body {
-  background: #ffffff;
   margin: 0;
   font-family: "Poppins";
+  color: var(--textColor);
 }
 
 /* Home Page ======================================================================*/
+
 .homepage-container {
-  background: var(--secondary);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  }
-  
-.intro-container {
-  flex: 1;
-  max-width: 600px;
+  margin: 10px;
+
 }
   
-.image-container {
-  flex: 1;
-  margin-left: 40px;
-}
   
 .image-container img {
+  flex-direction: row;
   width: 100%;
   max-width: 400px;
+  min-width: 400px;
   height: auto;
 }
 /*Projects Select Page =====================================================================*/
@@ -53,6 +49,9 @@ body {
 .project-card {
   background-color: var(--secondary);
   padding: 20px;
+}
+.project-card img{
+  width: 100%;
 }
 
 .project-details {
@@ -78,12 +77,12 @@ body {
   text-decoration: none;
   border-radius: 4px;
 }
-/* Outer Navbar =============================================================== */
+/* Navbar =============================================================== */
 header {
   padding: 20px 200px 20px 200px;
+  
 }
-/* Inner Navbar */
-header .container {
+header .navContainer {
   border-bottom: solid;
   max-width: 1400px;
   margin: 0 auto;
@@ -92,23 +91,13 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-header a {
-  color: #333;
-  text-decoration: none;
-}
-.pages{
-  max-width: 1400px;
-  padding: 20px;
-  margin: 0 auto;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo {
   text-decoration: none;
-  color: #000000;
-  font-size: 20px;
+  color: var(--textColor);
+  font-size: 16px;
+  margin: 10px;
+}
+@media only screen and (device-width: 828px) and (device-height: 1792px) and (-webkit-device-pixel-ratio: 2) {
+  /* CSS styles specific to iPhone 11 */
+  /* Add your styles here */
 }

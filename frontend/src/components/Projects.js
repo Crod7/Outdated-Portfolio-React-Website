@@ -6,7 +6,7 @@ const Projects = () => {
       id: 1,
       title: 'Budgeting React App',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tincidunt elit.',
-      image: 'project1.jpg',
+      image: '/budgetThumbnail.jpg',
       page: 'https://example.com/project1',
       sourceCode: 'https://example.com/project1'
     },
@@ -14,7 +14,7 @@ const Projects = () => {
       id: 2,
       title: 'Appointment Management System',
       description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
-      image: 'project2.jpg',
+      image: '/appointmentThumbnail.jpg',
       page: 'https://example.com/project2',
       sourceCode: 'https://example.com/project2'
 
@@ -23,7 +23,7 @@ const Projects = () => {
       id: 3,
       title: 'Routing Optimization Algorithm Program',
       description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
-      image: 'project2.jpg',
+      image: '/routingProjectThumbnail.jpg',
       page: 'https://example.com/project2',
       sourceCode: 'https://example.com/project2'
 

@@ -2,30 +2,26 @@ import { useEffect } from "react"
 
 const Home = () => {
 
-    useEffect(() => {
+  useEffect(() => {
         
-    }, [])
+  }, [])
 
 
-    return (
+  return (
     <div className="homepage-container">
-        <div className="intro-container">
-          <h1>Welcome</h1>
-          <p>Hi, my name is Carlos Rodriguez, a software developer passionate about creating amazing applications.</p>
-        </div>
-        <div className="image-container">
-          {/* Add an image or illustration that represents you or your work */}
-          <img src="/pic.png" alt="Profile" />
-        </div>
+      <div>
+        <h1>Carlos Rodriguez</h1>
+        <p>Hi, my name is Carlos Rodriguez, a software developer passionate about creating amazing applications.</p>
+      </div>
 
-        <div className="summary-container">
-        <h2>About</h2>
+      <div className="homepage-container">
+        <h2>About Me</h2>
         <p>
           Driven software developer with a strong foundation in programming languages and frameworks. Experienced in building web applications using technologies such as Java, Python, React, and JavaScript. Skilled in creating intuitive user interfaces and implementing backend functionality. Committed to delivering high-quality solutions and continuously expanding technical skills. Seeking a software development role that offers opportunities for growth and the chance to contribute to innovative projects. Finally, always willing to learn.
         </p>
       </div>
     </div>
-    )
+  )
 }
 
 export default Home
