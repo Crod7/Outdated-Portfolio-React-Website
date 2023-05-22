@@ -7,19 +7,24 @@ const Navbar = ({ scrollToSection }) => {
     <header>
       <div className="navContainer">
         {(
-          <button onClick={() => scrollToSection('home')}>Home</button>
+          // eslint-disable-next-line
+          <button onClick={() => scrollToSection('home')}>//Home</button>
         )}
         {(
-          <button onClick={() => scrollToSection('projects')}>Projects</button>
+          // eslint-disable-next-line
+          <button onClick={() => scrollToSection('projects')}>//Projects</button>
         )}
         {(
-          <button onClick={() => scrollToSection('skills')}>Skills</button>
+          // eslint-disable-next-line
+          <button onClick={() => scrollToSection('skills')}>//Skills</button>
         )}
         {(
-          <button onClick={() => scrollToSection('about')}>About</button>
+          // eslint-disable-next-line
+          <button onClick={() => scrollToSection('about')}>//About</button>
         )}
         {(
-          <button onClick={() => scrollToSection('contact')}>Contact</button>
+          // eslint-disable-next-line
+          <button onClick={() => scrollToSection('contact')}>//Contact</button>
         )}
       </div>
     </header>

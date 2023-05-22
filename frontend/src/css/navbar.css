@@ -24,8 +24,9 @@ header .navContainer {
   align-items: center;
   justify-content: right;
 }
-.logo {
+.navContainer button {
   border: solid;
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgba(255, 255, 255, 0);
   text-decoration: none;
   padding: 0px 20px 0px 20px;
@@ -33,7 +34,7 @@ header .navContainer {
   font-size: 16px;
   margin: 0px 12px 0px 12px;
 }
-.logo:hover{
+.navContainer button:hover{
   border: solid;
   border-radius: 10px;
 }

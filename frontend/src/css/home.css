@@ -1,3 +1,4 @@
+/* This controls how the page is formatted. We have a column with each section representing a new row.*/
 .homepage-container {
     display: flex;
     flex-direction: column;
@@ -6,7 +7,21 @@
     padding: 0px;
     margin: 0px 16px 150px 16px;
   }
+/* The is the LARGE name displayed on the front.*/
+.homepage-banner {
+  height: 100vh;
+  background-image: url('../assets/pic.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+  /* The is the LARGE name displayed on the front.*/
 .homepage-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
   color: var(--titleColor);
   font-size: 90px;
   margin: 0px;

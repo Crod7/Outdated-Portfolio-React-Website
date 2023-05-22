@@ -1,46 +1,21 @@
+import React from "react"
 
 const About = () => {
 
 
+  return (
+    <div>
+      <h2 className="title" id="about">About me</h2>
+      <div className="about-container">
+        <img src="/bomb.jpg" alt="HELLOWORLD" className="about-image"/>
+        <p className="about-text">
+          I was first introduced into programming when I was a kid. I wanted to make my own video game so I use this program called Game Maker 7. After making some basic platformer games, I wanted to transition into first person type of games. This is when I discovered programming. All advanced features required knowledge on c#. I learned c# just well enough to create my very first fps game.
+          It wasn't until I became an adult when I realized the true potential of software development. If I could spend all my time coding I would. I'm very passionate about programming and I can't wait to start working together.
+        </p>
+      </div>
+    </div>
 
-    return (
-        <div className="about-container">
-          <div className="section">
-            <h2 className="section-title">Introduction</h2>
-            <p>
-              Hi, I'm Carlos Rodriguez, a passionate software developer with a strong foundation in programming languages and frameworks. I specialize in building web applications using technologies like Java, Python, React, and JavaScript. I strive to create intuitive user interfaces and deliver high-quality solutions.
-            </p>
-          </div>
-    
-          <div className="section">
-            <h2 className="section-title">Education</h2>
-            <p>
-              B.S. in Computer Science, 2023<br />
-              Western Governors University, United States
-            </p>
-          </div>
-    
-          <div className="section">
-            <h2 className="section-title">Skills</h2>
-            <ul className="skill-list">
-              <li>Java</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Git</li>
-            </ul>
-          </div>
-    
-          <div className="section">
-            <h2 className="section-title">Experience</h2>
-            <p>
-              I have worked on various projects as a software developer, gaining hands-on experience in building web applications, implementing backend functionality, and collaborating within a team environment.
-            </p>
-          </div>
-        </div>
-      );
+  )
 }
 
 export default About
