@@ -1,34 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { useEffect } from "react"
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
 
-  useEffect(() => {
-  }, []);
 
   return (
     <header>
       <div className="navContainer">
         {(
-          <Link to="/" className="logo">
-            //Home
-          </Link>
+          <button onClick={() => scrollToSection('home')}>Home</button>
         )}
         {(
-          <Link to="/about" className="logo">
-            //About
-          </Link>
+          <button onClick={() => scrollToSection('projects')}>Projects</button>
         )}
         {(
-          <Link to="/resume" className="logo">
-            //Resume
-          </Link>
+          <button onClick={() => scrollToSection('skills')}>Skills</button>
         )}
         {(
-          <Link to="/contact" className="logo">
-            //Contact
-          </Link>
+          <button onClick={() => scrollToSection('about')}>About</button>
+        )}
+        {(
+          <button onClick={() => scrollToSection('contact')}>Contact</button>
         )}
       </div>
     </header>
