@@ -27,6 +27,29 @@ const Home = () => {
             sourceCode: 'https://example.com/project2' 
         }
     ]
+    const skills = [
+        {
+            id: 1,
+            title: 'Budgeting React App',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tincidunt elit.',
+            image: '/computerIcon.png',
+            className: 'red'
+        },
+        {
+            id: 2,
+            title: 'Appointment Management System',
+            description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
+            image: '/react.png',
+            className: 'blue'
+        },
+        {
+            id: 3,
+            title: 'Routing Optimization Algorithm Program',
+            description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
+            image: '/backendIcon.png',
+            className: 'yellow'
+        }
+    ]
 
   useEffect(() => {
         
@@ -57,8 +80,20 @@ const Home = () => {
             </div>
         </section>
         <div>
-            <h2 className="homepage-subtitle">About Me</h2>
+            <h2 className="title">Skills</h2>
+            <div className="skills-container">
+                {skills.map((skill) => (
+                <div key={skill.id} className="skill-card">
+                    <img src={skill.image} alt={skill.title} />
+                    <div className="skill-details">
+                    <h3>{skill.title}</h3>
+                    <p>{skill.description}</p>
+                    </div>
+                </div>
+                ))}
+            </div>
         </div>
+
     </div>
 
   )

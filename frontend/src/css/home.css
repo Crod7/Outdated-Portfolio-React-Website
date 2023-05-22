@@ -11,18 +11,18 @@
   font-size: 90px;
   margin: 0px;
 }
+
 .homepage-subtitle {
   color: var(--titleColor);
   font-size: 35px;
   text-align: right;
-  margin: 0px;
+  margin-bottom: 100px;
 }
     
-    
-  .image-container img {
-    flex-direction: row;
-    width: 100%;
-    max-width: 400px;
-    min-width: 400px;
-    height: auto;
-  }
+.image-container img {
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;
+}

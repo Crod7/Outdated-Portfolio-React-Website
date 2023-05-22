@@ -25,9 +25,17 @@
   .form-group {
     margin-bottom: 20px;
   }
+  .form-group:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.05);
+  }
   .form-group-message {
     min-height: 200px;
     margin-bottom: 20px;
+  }
+  .form-group-message:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.05);
   }
   .form-group-message textarea{
     width: 95%;
