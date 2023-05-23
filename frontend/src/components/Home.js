@@ -17,14 +17,18 @@ const Home = () => {
 
   return (
     <div>
-        <div className="navbar-container">
+        <div>
             <Navbar scrollToSection={scrollToSection} />
         </div>
-        <div className="homepage-container" >
+        <div className="main-container" >
         <div ref={sectionRef}>
             <div className="homepage-banner" id="home">
-                <h1 className="homepage-name">Carlos Rodriguez</h1>
-                <h2 className="homepage-subtitle">Software Developer</h2>
+                <button>Resume</button>
+                <div className="homepage-name">
+                    <h1>Carlos</h1>
+                    <h2>Rodriguez</h2>
+                    <h3>Software Developer</h3>
+                </div>
             </div>
             <div id="projects">
                 <Project />

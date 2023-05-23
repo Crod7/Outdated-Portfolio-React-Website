@@ -1,16 +1,13 @@
 #projects {
     padding: 20px;
     margin: 0px;
-    background-color: rgb(83, 74, 249);
-
-  }
-.project-title{
-  color: black;
-  font-size: 36px;
+    background-color: var(--primaryBackground);
 }
-    
+.project-title{
+  color: var(--titleColor);
+  font-size: 36px;
+}   
 .section-container-projects{
-  background-color: white;
   margin: 0px;
   color: black;
 }
@@ -22,13 +19,12 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-  
-  .project-card {
-    background-color: var(--secondary);
-    border-radius: 10px;
-    box-shadow: var(--boxShadow);
-    padding: 20px;
-  }
+.project-card {
+  background-color: var(--secondary);
+  border-radius: 10px;
+  box-shadow: var(--boxShadow);
+  padding: 20px;
+}
   .project-card:hover {
     transition: transform 0.5s ease-in-out;
     transform: scale(1.1);

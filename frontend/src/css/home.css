@@ -1,42 +1,54 @@
-/* This controls how the page is formatted. We have a column with each section representing a new row.*/
-.homepage-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    margin: 0px 0px 150px 0px;
-  }
-
-/* The is the LARGE name displayed on the front.*/
+/* The is the banner container. Sets the banner to be as tall as the user display.*/
 .homepage-banner {
   margin-top: 36px;
   height: 100vh;
   position: relative;
 }
-  /* The is the LARGE name displayed on the front.*/
+  /* The is the title and sub-title displayed on the banenr.*/
 .homepage-name {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0px;
+  text-align: right;
   z-index: 1;
   color: var(--titleColor);
-  font-size: 90px;
+}
+.homepage-name h1{
+  position: absolute;
+  right: 10vw;
+  font-size: 70px;
+  margin: 0px;
+  top: 0vh;
+}
+.homepage-name h2{
+  position: absolute;
+  top: 60px;
+  right: 10vw;
+  font-size: 70px;
   margin: 0px;
 }
-
-.homepage-subtitle {
+.homepage-name h3{
+  position: absolute;
+  top: 200px;
+  right: 10vw;
+  font-size: 36px;
+  margin: 0px;
+}
+/* Manages the resume button on the banner.*/
+.homepage-banner button{
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  padding: 6px;
+  font-size: 24px;;
   color: var(--titleColor);
-  font-size: 35px;
-  text-align: right;
-  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  transition: transform 0.8s ease-in-out;
+  transform: scale(1);
 }
-    
-.image-container img {
-  flex-direction: row;
-  width: 100%;
-  max-width: 400px;
-  min-width: 400px;
-  height: auto;
+
+.homepage-banner button:hover {
+  transition: transform 0.8s ease-in-out;
+  transform: scale(1.2);
 }
+

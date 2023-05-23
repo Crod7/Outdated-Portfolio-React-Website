@@ -6,27 +6,33 @@
 @import "contact.css";
 @import "footer.css";
 @import "skills.css";
-
-/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
+/* Controls the css variables for the program.*/
 :root {
-  --primary: #00d0eb;
+  --primaryBackground: rgb(115, 157, 216);
   --secondary: #cecece;
-  --button: #547EAB;
+  --button: #3a99ff;
   --error: #e7195a;
   --textColor: rgb(0, 0, 0);
   --titleColor: white;
   --boxShadow: 4px 8px 18px rgba(255, 255, 255, 0.5);
+  --font: 'Poppins';
+  --backgroundImage: url('../assets/mainBG.png');
 
 }
+/* This allows the navbar to be linked to the top of the screen.*/
+.main-container {
+  display: flex;
+}
+/* This controls the background and font.*/
 body {
-  background-image: url('../assets/mainBG.png');
+  background-image: var(--backgroundImage);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  font-family: "Poppins";
+  font-family: var(--font);
   color: var(--textColor);
 }
 
