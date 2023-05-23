@@ -21,7 +21,10 @@
 
 }
 body {
-  background: rgb(10, 0, 63);
+  background-image: url('../assets/mainBG.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin: 0;
   font-family: "Poppins";
   color: var(--textColor);

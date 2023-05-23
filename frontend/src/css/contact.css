@@ -11,6 +11,7 @@
   }
   .contact-container form {
     min-width: 400px;
+    height: 400px;
     padding: 20px;
     background-color: var(--secondary);
     border-radius: 8px;
@@ -30,8 +31,8 @@
     transform: scale(1.05);
   }
   .form-group-message {
-    min-height: 200px;
-    margin-bottom: 20px;
+    min-height: 75px;
+    margin-bottom: 6px;
   }
   .form-group-message:hover {
     transition: transform 0.5s ease-in-out;
@@ -39,7 +40,7 @@
   }
   .form-group-message textarea{
     width: 95%;
-    min-height: 200px;
+    min-height: 75px;
     min-width: 95%;
     padding: 10px;
     border-radius: 4px;

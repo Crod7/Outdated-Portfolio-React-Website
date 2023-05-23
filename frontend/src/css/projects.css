@@ -1,14 +1,27 @@
 #projects {
     padding: 20px;
+    margin: 0px;
+    background-color: rgb(83, 74, 249);
+
   }
-  
-  .projects-container {
-    margin-top: 22px;
-    margin-bottom: 44px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
+.project-title{
+  color: black;
+  font-size: 36px;
+}
+    
+.section-container-projects{
+  background-color: white;
+  margin: 0px;
+  color: black;
+}
+.projects-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 44px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
   
   .project-card {
     background-color: var(--secondary);

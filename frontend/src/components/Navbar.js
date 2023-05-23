@@ -4,7 +4,7 @@ const Navbar = ({ scrollToSection }) => {
 
 
   return (
-    <header>
+    <div className='headerNav'>
       <div className="navContainer">
         {(
           // eslint-disable-next-line
@@ -27,7 +27,7 @@ const Navbar = ({ scrollToSection }) => {
           <button onClick={() => scrollToSection('contact')}>//Contact</button>
         )}
       </div>
-    </header>
+    </div>
   );
 }
 

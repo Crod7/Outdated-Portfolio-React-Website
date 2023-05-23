@@ -1,28 +1,31 @@
+
+
 @media (max-width: 730px) {
-  header {
-    margin: 0px;
-    padding: 20px 0px 20px 0px;
-    min-width: 560px;
-    justify-content: center;  
+  .headerNav {
+    background-color: rgba(0, 0, 122, 0.922);
+    position: fixed;
+    z-index: 3;
+    padding: 4px 0px 0px 0px;
+    min-width: 100vw;
   }
 }
 @media (min-width: 731px) {
-  header {
-    padding: 20px 12% 20px 12%;
-    min-width: 400px;
+  .headerNav {
+    background-color: rgba(0, 0, 122, 0.922);
+    position: fixed;
+    z-index: 3;
+    margin: 0px;
+    padding: 4px 0px 0px 0px;
+    min-width: 100vw;
   }
 }
 
 header .navContainer {
-  border-bottom: solid;
-  border-color: var(--titleColor);
   min-width: 400px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0px 10px 4px 10px;
   display: flex;
-  align-items: center;
-  justify-content: right;
 }
 .navContainer button {
   border: solid;
