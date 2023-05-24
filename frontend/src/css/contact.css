@@ -2,12 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
-  }
-  .title {
-    color: var(--titleColor);
-    font-size: 40px;
-    margin: 0px;
+    padding: 10px 0px 0px 0px;
   }
   .contact-container form {
     min-width: 400px;

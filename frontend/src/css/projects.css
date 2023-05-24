@@ -3,10 +3,6 @@
     margin: 0px;
     background-color: var(--primaryBackground);
 }
-.project-title{
-  color: var(--titleColor);
-  font-size: 36px;
-}   
 .section-container-projects{
   margin: 0px;
   color: black;

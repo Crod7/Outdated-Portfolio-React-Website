@@ -1,12 +1,30 @@
+/* This manages the skills section.*/
+
+
+/* Manages the padding of the entire section. (Exterior of the section.)*/
 #skills {
   padding: 20px;
 }
+/* This creates the rotation.*/
+@keyframes rotateY {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+}
+/* Manages some variables and the size of the section.*/
 .skills-container{
-  margin-top: 22px;
-  margin-bottom: 44px;
+  perspective: 1000px; /* Needed for the rotation.*/
+  --technicalShadow: 0px 2px 10px rgb(255, 0, 0);
+  --frontendShadow: 0px 2px 10px rgb(60, 83, 255);
+  --databaseShadow: 0px 2px 10px rgb(250, 185, 44);
+  min-height: 60vh; /* Size of the section proportional to screen size.*/
   display: grid;
   gap: 0px;
 }
+/* How the grid is layed out depending on screen size.*/
 @media (max-width: 730px){
   .skills-container {
     grid-template-columns: 1fr;
@@ -14,10 +32,13 @@
 }
 @media (min-width: 731px){
   .skills-container {
+    margin-top: 30vh;
     grid-template-columns: 1fr 1fr 1fr;
   } 
 }
+/* Manages how the container is constructed and how it looks. Border, color etc.*/
 .skill-card {
+  max-height: 200px;
   display: inline-block;
   color: var(--titleColor);
   border: solid;
@@ -26,42 +47,38 @@
   border-radius: 4px;
   padding: 20px;
 }
-
+/* The glow when you hover over a container.*/
+#technical-container:hover{
+  box-shadow: var(--technicalShadow);
+}
+#frontend-container:hover{
+  box-shadow: var(--frontendShadow);
+}
+#database-container:hover{
+  box-shadow: var(--databaseShadow);
+}
+/* This manages the image.*/
 .skill-card img{
+  animation: rotateY 3s linear infinite;
   max-height: 50px;
 }
-  
-.skill-details {
-  margin-top: 10px;
-}
-  
+/* Manages title such as 'Technical Skills'.*/  
 .skill-details h3 {
+  margin-top: 10px;
   font-size: 20px;
   margin-bottom: 5px;
 }
-  
+/* Manages text describing list of skills.*/  
 .skill-details p {
   margin-bottom: 10px;
 }
-  
-.skill-details a {
-  display: inline-block;
-  padding: 8px 12px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
+/* Manages the title glow of each container.*/
+.technical-title-text{
+  text-shadow: var(--technicalShadow)
 }
-
-.red-text{
-  text-shadow: 0px 2px 10px rgb(255, 0, 0);
+.frontend-title-text{
+  text-shadow: var(--frontendShadow);
 }
-.blue-text{
-  text-shadow: 0px 2px 10px rgb(60, 83, 255);
-}
-.yellow-text{
-  text-shadow: 0px 2px 10px rgb(250, 185, 44);
-
+.database-title-text{
+  text-shadow: var(--databaseShadow);
 }

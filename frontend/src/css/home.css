@@ -1,5 +1,6 @@
 /* The is the banner container. Sets the banner to be as tall as the user display.*/
 .homepage-banner {
+  padding: 10px 0px 0px 0px;
   margin-top: 36px;
   height: 100vh;
   position: relative;
@@ -43,12 +44,12 @@
   color: var(--titleColor);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 6px;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   transform: scale(1);
 }
 
 .homepage-banner button:hover {
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   transform: scale(1.2);
 }
 

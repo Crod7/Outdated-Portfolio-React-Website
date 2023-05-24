@@ -35,6 +35,13 @@ body {
   font-family: var(--font);
   color: var(--textColor);
 }
+/* This manages the section titles(projects, skills, about me, etc...).*/
+.title {
+  color: var(--titleColor);
+  font-size: 40px;
+  margin: 0px;
+
+}
 
 
 @media only screen and (device-width: 828px) and (device-height: 1792px) and (-webkit-device-pixel-ratio: 2) {

@@ -1,3 +1,9 @@
+/* This manages the About section.*/
+
+/* The padding needs to be 1px for the top inorder for the scroll feature to land just above the section.*/
+#about{
+  padding: 1px 0px 0px 0px;
+}
 .about-background{
   background-color: var(--primaryBackground);
 }
@@ -13,12 +19,5 @@
 }
 
 .about-text{
-  color: rgb(255, 255, 255);
+  color: var(--titleColor);
 }
-
-  
-.about-title{
-  color: rgb(255, 255, 255);
-  font-size: 36px;
-}
-  

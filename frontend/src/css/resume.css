@@ -3,11 +3,6 @@
     margin: 0 auto;
     padding: 20px;
   }
-.title {
-  color: var(--titleColor);
-  font-size: 40px;
-  margin: 0px;
-}
   .section-container {
     background-color: var(--secondary);
     border-radius: 10px;
