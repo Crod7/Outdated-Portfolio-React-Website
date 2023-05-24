@@ -6,7 +6,7 @@ const Project = () => {
         {
             id: 1,
             title: 'Budgeting React App',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tincidunt elit.',
+            description: 'A budgeting app that uses the MERN stack. Is able to sign up users authenticate them. Helps users manage their monthly budgets.',
             image: '/budgetThumbnail.jpg',
             page: 'https://example.com/project1',
             sourceCode: 'https://example.com/project1'
@@ -14,7 +14,7 @@ const Project = () => {
         {
             id: 2,
             title: 'Appointment Management System',
-            description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
+            description: 'A JavaFX UI interface that connects to a local database to keep track of appointments & customers. Helps manage schedule conflicts & data from appointments & customers. ',
             image: '/appointmentThumbnail.jpg',
             page: 'https://example.com/project2',
             sourceCode: 'https://example.com/project2' 
@@ -22,7 +22,7 @@ const Project = () => {
         {
             id: 3,
             title: 'Routing Optimization Algorithm Program',
-            description: 'Praesent eu vestibulum justo. Donec auctor nibh ac purus feugiat, id tempus risus efficitur.',
+            description: 'Takes a csv file with a list of addresses & another csv file with a list of package information. Uses the package information & the greedy algorithm to find an optimal path to deliver all packages.',
             image: '/routingProjectThumbnail.jpg',
             page: 'https://example.com/project2',
             sourceCode: 'https://example.com/project2' 

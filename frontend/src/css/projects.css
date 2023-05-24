@@ -3,10 +3,7 @@
     margin: 0px;
     background-color: var(--primaryBackground);
 }
-.section-container-projects{
-  margin: 0px;
-  color: black;
-}
+/* Manages the size and layout of the section.*/
 .projects-container {
   margin-left: 100px;
   margin-right: 100px;
@@ -14,18 +11,26 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  min-height: 80vh;
 }
 .project-card {
+  margin-top: 10vh;
   background-color: var(--secondary);
   border-radius: 10px;
   box-shadow: var(--boxShadow);
   padding: 20px;
+  transition: transform 0.5s ease-in-out;
 }
   .project-card:hover {
     transition: transform 0.5s ease-in-out;
     transform: scale(1.1);
   }
   .project-card img{
+    max-height: 300px;
+    max-width: 400px;
+    border: outset;
+    border-radius: 8px;
+    border-color: rgb(0, 0, 0);
     width: 100%;
   }
   
@@ -47,9 +52,16 @@
     padding: 8px 12px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: #333;
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: solid;
+    margin-bottom: 4px;
+    border-color: black;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
+  }
+
+  .project-details a:hover {
+    background-color: white;
   }
   

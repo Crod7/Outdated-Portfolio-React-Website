@@ -10,13 +10,14 @@
 
 /* Controls the css variables for the program.*/
 :root {
-  --primaryBackground: rgb(115, 157, 216);
+  /*--primaryBackground: rgb(115, 157, 216);*/
+  --primaryBackground: rgba(7, 0, 74, 0.922);
   --secondary: #cecece;
   --button: #3a99ff;
   --error: #e7195a;
   --textColor: rgb(0, 0, 0);
   --titleColor: white;
-  --boxShadow: 4px 8px 18px rgba(255, 255, 255, 0.5);
+  --boxShadow: 0px 0px 18px rgba(255, 255, 255, 0.5);
   --font: 'Poppins';
   --backgroundImage: url('../assets/mainBG.png');
 

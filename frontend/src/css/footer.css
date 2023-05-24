@@ -2,8 +2,8 @@
 
 .footer {
     /*background-color: #2bb430;*/
-    background-color: var(--secondary);
-    color: var(--textColor);
+    background-color: var(--primaryBackground);
+    color: var(--titleColor);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@
   }
   
   .footer-section.right-section {
-    text-align: right;
+    text-align: center;
     margin-right: 15%;
   }
   

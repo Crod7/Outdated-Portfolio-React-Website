@@ -26,7 +26,7 @@ const Skills = () => {
                     <img src={'/backendIcon.png'} alt={'Database Skills'} />
                     <div>
                         <h3 className="database-title-text">{'Database Skills'}</h3>
-                        <p>{'MongoDB, MySql, PostgresSpl, Postman'}</p>
+                        <p>{'MongoDB, MySql, PostgresSql, Postman'}</p>
                     </div>
                 </div>
             </div>
