@@ -24,10 +24,15 @@
 }
 /* This allows the navbar to be linked to the top of the screen.*/
 .main-container {
-  display: flex;
+  width: 100%;
 }
 /* This controls the background and font.*/
 body {
+  margin:0px;
+  width:100vw;
+  height:100vh;
+  overflow:auto;
+  margin-top: 0px;
   background-image: var(--backgroundImage);
   background-size: cover;
   background-position: center;
@@ -44,8 +49,6 @@ body {
 
 }
 
+@media only screen and (max-width: 767px) {
 
-@media only screen and (device-width: 828px) and (device-height: 1792px) and (-webkit-device-pixel-ratio: 2) {
-  /* CSS styles specific to iPhone 11 */
-  /* Add your styles here */
 }

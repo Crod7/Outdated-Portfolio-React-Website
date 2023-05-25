@@ -40,10 +40,11 @@
   bottom: 10vh;
   left: 10vw;
   padding: 6px;
-  font-size: 24px;;
+  font-size: 24px;
   color: var(--titleColor);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 6px;
+  border-color: white;
   transition: transform 0.2s ease-in-out;
   transform: scale(1);
 }
@@ -53,3 +54,21 @@
   transform: scale(1.2);
 }
 
+/* Manages device screen.*/
+@media only screen and (max-width: 767px) {
+  .homepage-name h1{
+    top: 40px;
+    font-size: 40px;
+  }
+  .homepage-name h2{
+    top: 80px;
+    font-size: 40px;
+  }
+  .homepage-name h3{
+    font-size: 22px;
+  }
+  .homepage-banner button{
+    bottom: 24vh;
+    font-size: 24px;
+  }
+}
