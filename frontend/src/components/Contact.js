@@ -1,18 +1,24 @@
-import React, { useState} from 'react';
+import React, { useState, useRef} from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs.sendForm('service_goxjmeb', 'template_vq8q0v6', form.current, 'HJuy_hVTcQ2g4c6AG')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
     // Handle form submission logic here
     console.log(formData);
     // Reset the form after submission
@@ -27,40 +33,14 @@ const Contact = () => {
     <div className='contact-title'>
       <h1 className='title'>Contact me</h1>
       <div className="contact-container">
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group-message">
-            <label htmlFor="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit">Submit</button>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="name" />
+          <label>Email</label>
+          <input type="email" name="email" />
+          <label>Message</label>
+          <textarea style={{ resize: "none" }} name="message" />
+          <input className='submit-button' type="submit" value="Send" />
         </form>
       </div>
     </div>

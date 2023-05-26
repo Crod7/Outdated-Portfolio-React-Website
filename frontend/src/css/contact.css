@@ -39,7 +39,6 @@
   }
   .form-group-message textarea{
     width: 95%;
-    min-height: 75px;
     min-width: 95%;
     padding: 10px;
     border-radius: 4px;
@@ -60,7 +59,7 @@
     border: 1px solid #ccc;
   }
   
-  button[type='submit'] {
+  .submit-button {
     display: block;
     width: 100%;
     padding: 10px;
