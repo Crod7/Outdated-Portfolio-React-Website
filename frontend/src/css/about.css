@@ -25,3 +25,12 @@
   color: var(--titleColor);
   margin-top: 40vh;
 }
+
+/* Manages mobile/decreased device screen.*/
+@media only screen and (max-width: 767px) {
+  .about-text{
+    color: var(--titleColor);
+    margin-top: 0vh;
+    text-align: center;
+  }
+}

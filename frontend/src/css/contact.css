@@ -1,3 +1,6 @@
+#contact{
+  padding: 50px 0px 0px 0px;
+}
 .contact-container {
     display: flex;
     justify-content: center;
@@ -8,6 +11,7 @@
     min-width: 400px;
     height: 400px;
     padding: 20px;
+    margin-bottom: 20px;
     background-color: var(--secondary);
     border-radius: 8px;
     box-shadow: var(--boxShadow);
@@ -66,3 +70,11 @@
     border-radius: 4px;
     cursor: pointer;
   }
+
+  /* Manages mobile/decreased device screen.*/
+@media only screen and (max-width: 767px) {
+  .contact-container form {
+    min-width: 300px;
+    margin-bottom: 40px;
+  }
+}

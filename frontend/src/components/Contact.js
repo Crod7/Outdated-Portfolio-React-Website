@@ -4,7 +4,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
     message: '',
   });
 
@@ -20,7 +19,6 @@ const Contact = () => {
     setFormData({
       name: '',
       email: '',
-      company: '',
       message: '',
     });
   };
@@ -50,16 +48,6 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="company">Company:</label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              value={formData.company}
-              onChange={handleChange}
             />
           </div>
           <div className="form-group-message">

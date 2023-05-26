@@ -82,3 +82,14 @@
 .database-title-text{
   text-shadow: var(--databaseShadow);
 }
+
+/* Manages mobile/decreased device screen.*/
+@media only screen and (max-width: 767px) {
+  #skills {
+    padding: 28px 0px 0px 0px;
+  }
+  .skill-card {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
