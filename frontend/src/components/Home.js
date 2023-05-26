@@ -13,6 +13,9 @@ const Home = () => {
             section.scrollIntoView({behavior: 'smooth'})
         }
     }
+    const openPDF = () => {
+        window.open("/Portfolio-React-Website/Resume.pdf", "_blank")
+      }
 
 
   return (
@@ -24,7 +27,7 @@ const Home = () => {
         <Navbar scrollToSection={scrollToSection} />
         <div ref={sectionRef}>
             <div className="homepage-banner" id="home">
-                <button>Resume</button>
+                <button onClick={openPDF}>Resume</button>
                 <div className="homepage-name">
                     <h1>Carlos</h1>
                     <h2>Rodriguez</h2>

@@ -1,7 +1,6 @@
 
 
 .footer {
-    /*background-color: #2bb430;*/
     background-color: var(--primaryBackground);
     color: var(--titleColor);
     padding: 20px;
@@ -10,17 +9,15 @@
   }
   
   .footer-section {
-    width: 50%;
+    width: 100%;
   }
   
   .footer-section.left-section {
     text-align: left;
-    margin-left: 15%;
   }
   
   .footer-section.right-section {
     text-align: center;
-    margin-right: 15%;
   }
   
   .footer-section ul {

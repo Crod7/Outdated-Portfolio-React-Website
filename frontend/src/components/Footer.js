@@ -1,5 +1,5 @@
 import React from 'react';
-import githubIcon from '../assets/github.svg';
+import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.png';
 
 
@@ -7,28 +7,22 @@ const Footer = () => {
     <Footer githubIcon={githubIcon} linkedinIcon={linkedinIcon} />
   return (
     <footer className="footer">
-        <div className="footer-section left-section">
-            <h3>Links</h3>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
-        </div>
         <div className="footer-section right-section">
             <h3>Check me out</h3>
             <ul>
                 <li>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a style={{ color: 'lime' }} href="https://github.com/Crod7" target="_blank" rel="noopener noreferrer">
                         <img src={githubIcon} alt="GitHub" />
+                        GitHub 
                     </a>
-                    GitHub 
+                    
                 </li>
                 <li>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedinIcon} alt="GitHub" />
+                    <a style={{ color: 'lime' }} href="https://www.linkedin.com/in/carlosrodriguez007/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinIcon} alt="Linkedin" />
+                        Linkedin  
                     </a>
-                     Linkedin              
+                                
                 </li>
             </ul>
         </div>
