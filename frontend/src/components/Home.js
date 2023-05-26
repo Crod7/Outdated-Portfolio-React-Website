@@ -32,6 +32,12 @@ const Home = () => {
                     <h1>Carlos</h1>
                     <h2>Rodriguez</h2>
                     <h3>Software Developer</h3>
+                    <a href="https://github.com/Crod7" target="_blank" rel="noopener noreferrer">
+                        <img className="github-link"src="/Portfolio-React-Website/github.png" alt={'null/404/notworking.exe'}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlosrodriguez007/" target="_blank" rel="noopener noreferrer">
+                        <img className="linkedin-link"src="/Portfolio-React-Website/linkedin.png" alt={'null/404/notworking.exe'}/>
+                    </a>
                 </div>
             </div>
             <div id="projects">

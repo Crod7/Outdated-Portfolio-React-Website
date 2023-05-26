@@ -5,6 +5,16 @@
   height: 100vh;
   position: relative;
 }
+/* This creates the bouncing animation when hovering over an icon.*/
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
   /* The is the title and sub-title displayed on the banenr.*/
 .homepage-name {
   position: absolute;
@@ -47,6 +57,24 @@
   border-color: white;
   transition: transform 0.2s ease-in-out;
   transform: scale(1);
+}
+.github-link{
+  position: relative;
+  max-height: 50px;
+  right: 10vw;
+  top: 350px;
+  margin: 4px;
+}
+.linkedin-link{
+  position: relative;
+  max-height: 50px;
+  right: 10vw;
+  top: 350px;
+  margin: 4px;
+}
+.homepage-banner img:hover{
+  animation: bounce 1s infinite;
+
 }
 
 .homepage-banner button:hover {
