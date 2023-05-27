@@ -27,7 +27,7 @@ const Skills = () => {
                     <div className="spinning-icons">
                         <h3 className="frontend-title-text">{'FrontEnd Frameworks'}</h3>
                         <p>{'React, Javascript, CSS, HTML'}</p>
-                        <img src={'/Portfolio-React-Website/reactlogo.png'} alt={'null/404/notworking.exe'}/>
+                        <img src={'/Portfolio-React-Website/reactLogo.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/js.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/css.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/html.png'} alt={'null/404/notworking.exe'}/>

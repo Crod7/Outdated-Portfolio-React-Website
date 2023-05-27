@@ -39,7 +39,7 @@ const Contact = () => {
           <label>Email</label>
           <input type="email" name="email" />
           <label>Message</label>
-          <textarea style={{ resize: "none" }} name="message" />
+          <textarea className='message-box' style={{ resize: "none" }} name="message" />
           <input className='submit-button' type="submit" value="Send" />
         </form>
       </div>
