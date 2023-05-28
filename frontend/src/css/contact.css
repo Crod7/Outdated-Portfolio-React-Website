@@ -1,6 +1,28 @@
 #contact{
   padding: 50px 0px 0px 0px;
 }
+.message-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success-message{
+  color:lime;
+  text-align: center;
+  border: solid;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 4s ease-in-out forwards;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .contact-container {
     display: flex;
     justify-content: center;
