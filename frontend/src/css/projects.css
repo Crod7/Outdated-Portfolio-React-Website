@@ -3,82 +3,85 @@
     margin: 0px;
     background-color: var(--primaryBackground);
 }
-/* Manages the size and layout of the section.*/
-.projects-container {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 44px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  min-height: 80vh;
-}
-.project-card {
-  margin-top: 10vh;
-  background-color: var(--secondary);
-  border-radius: 10px;
-  box-shadow: var(--boxShadow);
-  padding: 20px;
-  transition: transform 0.5s ease-in-out;
-}
-  .project-card:hover {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(1.1);
-  }
-  .project-card img{
-    max-height: 300px;
-    max-width: 400px;
-    border: outset;
-    border-radius: 8px;
-    border-color: rgb(0, 0, 0);
-    width: 100%;
-  }
-  
-  .project-details {
-    margin-top: 10px;
-  }
-  
-  .project-details h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .project-details p {
-    margin-bottom: 10px;
-  }
-  
-  .project-details a {
-    display: inline-block;
-    padding: 8px 12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
-    border: solid;
-    margin-bottom: 4px;
-    border-color: black;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-
-  .project-details a:hover {
-    background-color: white;
-  }
-
-/* Manages mobile/decreased device screen.*/
 @media only screen and (max-width: 767px) {
-#projects {
-    padding-top: 50px;
+  #projects {
+      padding-top: 50px;
+  }
 }
-.projects-container {
-  margin: 10px 10px 20px 0px;
-  padding: 8px 12px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  min-height: 80vh;
+/* This manages the projects on how they are divided.*/
+.project-parent-section{
+  height: 100%;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 80px;
 }
-.project-card {
-  border-radius: 10px;
-  padding: 20px;
+@media only screen and (max-width: 767px) {
+  .project-parent-section{
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
 }
+.project-section{
+  display:inline-block;
+  height: 100%;
 }
+.project-section img{
+  margin-top: 5%;
+  width: 100%;
+  border: outset;
+  border-radius: 4px;
+}
+.project-section-button-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.video-button, .code-button{
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+.video-button{
+  background-color: #ff8420;
+}
+.code-button{
+  background-color: rgb(86, 86, 255);
+}
+.project-section-title{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5%;
+}
+.project-section-subtitle{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 12px;
+}
+.project-section-description{
+  font-size: 14px;
+  text-align: center;
+  margin: 8%;
+}
+.project-section-list-of-technologies{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-section-list-of-technologies img{
+  border-style: none;
+  max-height: 50px;
+  max-width: 50px;
+}
+
   

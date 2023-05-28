@@ -20,9 +20,6 @@ const Home = () => {
 
   return (
     <div>
-        <div>
-
-        </div>
         <div className="main-container" >
         <Navbar scrollToSection={scrollToSection} />
         <div ref={sectionRef}>

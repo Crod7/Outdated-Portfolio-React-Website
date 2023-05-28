@@ -16,6 +16,7 @@ const Skills = () => {
                         <img src={'/Portfolio-React-Website/java.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/python.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/node.png'} alt={'null/404/notworking.exe'}/>
+                        <img src={'/Portfolio-React-Website/express.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/json.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/git.png'} alt={'null/404/notworking.exe'}/>
                         <img src={'/Portfolio-React-Website/gitbash.png'} alt={'null/404/notworking.exe'}/>
