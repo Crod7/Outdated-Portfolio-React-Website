@@ -4,6 +4,7 @@
 /* Manages the padding of the entire section. (Exterior of the section.)*/
 #skills {
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /* This creates the bouncing animation when hovering over an icon.*/
 @keyframes bounce {
@@ -26,6 +27,16 @@
   100% {
     transform: perspective(1000px) rotateY(360deg);
   }
+}
+
+.about-title{
+  font-size: 20px;
+}
+.skills-description{
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  font-size: 16px;
 }
 /* Manages some variables and the size of the section.*/
 .skills-container{

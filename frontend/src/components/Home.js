@@ -1,7 +1,6 @@
 import Navbar from "./Navbar"
 import Project from "./Projects"
 import Skills from "./Skills"
-import About from "./About"
 import React, {useRef} from "react"
 import Contact from "./Contact"
 
@@ -37,14 +36,11 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div id="projects">
-                <Project />
-            </div>
-            <div id="skills">
+            <div id="about">
                 <Skills />
             </div>
-            <div id="about">
-                <About />
+            <div id="projects">
+                <Project />
             </div>
             <div id="contact">
                 <Contact />

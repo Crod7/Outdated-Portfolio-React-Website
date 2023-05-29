@@ -1,14 +1,23 @@
+/* 
+Manages the project section.
+*/
+
+/* 
+Manages entire section.
+*/
 #projects {
     padding: 20px;
     margin: 0px;
-    background-color: var(--primaryBackground);
-}
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 @media only screen and (max-width: 767px) {
   #projects {
       padding-top: 50px;
   }
 }
-/* This manages the projects on how they are divided.*/
+/* 
+Manages how the projects will be structured and what grid template it will use.
+*/
 .project-parent-section{
   height: 100%;
   display: grid;
@@ -27,25 +36,45 @@
   display:inline-block;
   height: 100%;
 }
+/*
+Manages the program picture.
+*/
 .project-section img{
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 5%;
-  width: 100%;
+  width: 80%;
   border: outset;
   border-radius: 4px;
 }
+/*
+Manages the buttons under the picture of the program. Handles different screen sizes.
+*/
 .project-section-button-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .project-section-button-container{
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .video-button, .code-button{
   color: rgb(255, 255, 255);
   border-radius: 4px;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
   padding: 10px;
   text-decoration: none;
+  width: 100px;
 }
 .video-button{
   background-color: #ff8420;
@@ -53,6 +82,9 @@
 .code-button{
   background-color: rgb(86, 86, 255);
 }
+/*
+Manages the text in each program.
+*/
 .project-section-title{
   font-size: 24px;
   font-weight: bold;
@@ -72,6 +104,9 @@
   text-align: center;
   margin: 8%;
 }
+/*
+Manages the technology format and pictures for the project.
+*/
 .project-section-list-of-technologies{
   margin-left: 5%;
   margin-right: 5%;
@@ -80,8 +115,11 @@
 }
 .project-section-list-of-technologies img{
   border-style: none;
-  max-height: 50px;
-  max-width: 50px;
+  height: 7vh;
+  width: 7vw;
+  max-width: 7vh;
+  min-width: 50px;
+  min-height: 50px;
 }
 
   

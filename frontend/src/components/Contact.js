@@ -30,9 +30,7 @@ const Contact = () => {
   return (
     <div className='contact-title'>
       <h1 className='title'>Contact me</h1>
-      <div className='message-box-container'>
-        {isSuccess && <p className='success-message'>Email sent successfully!</p>}
-      </div>
+
       <div className="contact-container">
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
@@ -43,6 +41,9 @@ const Contact = () => {
           <textarea className='message-box' style={{ resize: "none" }} name="message" required/>
           <input className='submit-button' type="submit" value="Send" />
         </form>
+      </div>
+      <div className='message-box-container'>
+        {isSuccess && <p className='success-message'>Email sent successfully!</p>}
       </div>
     </div>
   );
