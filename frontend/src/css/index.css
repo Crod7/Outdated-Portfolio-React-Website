@@ -46,7 +46,8 @@ body {
 /* This manages the section titles(projects, skills, about me, etc...).*/
 .title {
   color: var(--titleColor);
-  font-size: 40px;
+  padding-top: 1.5vh;
+  font-size: 3vw;
   margin: 0px;
   margin-bottom: 26px;
   text-align: center;

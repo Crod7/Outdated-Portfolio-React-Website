@@ -39,11 +39,6 @@
     box-shadow: var(--boxShadow);
   }
   
-  .contact-title h1{
-    text-align: center;
-    font-size: 40px;
-  }
-  
   .form-group {
     margin-bottom: 20px;
   }
