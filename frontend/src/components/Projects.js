@@ -8,7 +8,7 @@ const Project = () => {
 
             <div className="project-parent-section">
                 <div className="project-section">
-                    <img src={"/Portfolio-React-Website/budgetThumbnail.jpg"} alt={"404.exe"} />
+                    <img src={"/Portfolio-React-Website/BudgetingAppThumbNail.png"} alt={"404.exe"} />
                     <div className="project-section-button-container">
                         <a className="video-button" href={"https://youtu.be/08Ayvy9zRv8"} target="_blank" rel="noopener noreferrer">See Video</a>
                         <a className="code-button" href={"https://github.com/Crod7/Budgeting-React-App"} target="_blank" rel="noopener noreferrer">See Code</a>
@@ -51,7 +51,7 @@ const Project = () => {
             </div>
             <div className="project-parent-section">
                 <div className="project-section">
-                    <img src={"/Portfolio-React-Website/appointmentThumbnail.jpg"} alt={"404.exe"} />
+                    <img src={"/Portfolio-React-Website/AppointmentAppThumbNail.png"} alt={"404.exe"} />
                     <div className="project-section-button-container">
                         <a className="video-button" href={"https://youtu.be/7HvbpJJomdQ"} target="_blank" rel="noopener noreferrer">See Video</a>
                         <a className="code-button" href={"https://github.com/Crod7/Appointment-Management-System"} target="_blank" rel="noopener noreferrer">See Code</a>
@@ -79,7 +79,7 @@ const Project = () => {
             </div>
             <div className="project-parent-section">
                 <div className="project-section">
-                    <img src={"/Portfolio-React-Website/routingProjectThumbnail.jpg"} alt={"404.exe"} />
+                    <img src={"/Portfolio-React-Website/RoutingAppThumbNail.png"} alt={"404.exe"} />
                     <div className="project-section-button-container">
                         <a className="video-button" href={"https://youtu.be/xeL16GQ1cxg"} target="_blank" rel="noopener noreferrer">See Video</a>
                         <a className="code-button" href={"https://github.com/Crod7/Routing-Delivery-Optimization-Algorithm-Program"} target="_blank" rel="noopener noreferrer">See Code</a>

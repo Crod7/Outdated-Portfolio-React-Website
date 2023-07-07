@@ -16,6 +16,10 @@ const Navbar = ({ scrollToSection }) => {
         )}
         {(
           // eslint-disable-next-line
+          <button onClick={() => scrollToSection('skills')}>//Skills</button>
+        )}
+        {(
+          // eslint-disable-next-line
           <button onClick={() => scrollToSection('projects')}>//Projects</button>
         )}
         {(

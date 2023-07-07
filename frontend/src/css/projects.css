@@ -8,13 +8,7 @@ Manages entire section.
 #projects {
     padding: 20px;
     margin: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
   }
-@media only screen and (max-width: 767px) {
-  #projects {
-      padding-top: 50px;
-  }
-}
 /* 
 Manages how the projects will be structured and what grid template it will use.
 */
@@ -45,25 +39,15 @@ Manages the program picture.
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5%;
-  width: 80%;
-  border: outset;
-  border-radius: 4px;
+  width: 90%;
 }
 /*
 Manages the buttons under the picture of the program. Handles different screen sizes.
 */
 .project-section-button-container{
-  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-@media only screen and (max-width: 767px) {
-  .project-section-button-container{
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 .video-button, .code-button{
   color: rgb(255, 255, 255);
@@ -78,9 +62,11 @@ Manages the buttons under the picture of the program. Handles different screen s
 }
 .video-button{
   background-color: #ff8420;
+  width: 80px;
 }
 .code-button{
   background-color: rgb(86, 86, 255);
+  width: 80px;
 }
 /*
 Manages the text in each program.
