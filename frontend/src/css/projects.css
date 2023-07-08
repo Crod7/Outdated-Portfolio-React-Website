@@ -8,6 +8,7 @@ Manages entire section.
 #projects {
     padding: 20px;
     margin: 0px;
+    background-color: var(--primaryBackground);
   }
 /* 
 Manages how the projects will be structured and what grid template it will use.
@@ -15,7 +16,7 @@ Manages how the projects will be structured and what grid template it will use.
 .project-parent-section{
   height: 100%;
   display: grid;
-  color: white;
+  color: var(--titleColor);
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   margin-bottom: 80px;
@@ -50,7 +51,9 @@ Manages the buttons under the picture of the program. Handles different screen s
   justify-content: center;
 }
 .video-button, .code-button{
-  color: rgb(255, 255, 255);
+  font-size: 2.8vh;
+  color: var(--titleColor);
+  font-weight: bold;
   border-radius: 4px;
   margin-top: 5%;
   margin-left: 10%;
@@ -58,37 +61,49 @@ Manages the buttons under the picture of the program. Handles different screen s
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  width: 100px;
+}
+.video-button:hover, .code-button:hover {
+  animation: bounce 1s infinite;
 }
 .video-button{
   background-color: #ff8420;
-  width: 80px;
+  width: 16vh;
 }
 .code-button{
   background-color: rgb(86, 86, 255);
-  width: 80px;
+  width: 16vh;
 }
 /*
 Manages the text in each program.
 */
 .project-section-title{
-  font-size: 24px;
+  font-size: 3vh;
+  color: var(--titleColor);
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
   margin-top: 5%;
 }
 .project-section-subtitle{
-  font-size: 16px;
+  font-size: 2.5vh;
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
   margin-top: 12px;
 }
+/*
+Manages the description of the program.
+*/
 .project-section-description{
-  font-size: 14px;
+  font-size: 2.5vh;
   text-align: center;
   margin: 8%;
+}
+@media only screen and (max-width: 767px) {
+  .project-section-description{
+    font-size: 1.5vh;
+    margin: 0px;
+  }
 }
 /*
 Manages the technology format and pictures for the project.
@@ -97,15 +112,34 @@ Manages the technology format and pictures for the project.
   margin-left: 5%;
   margin-right: 5%;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.project-section-list-of-technologies img{
-  border-style: none;
-  height: 7vh;
-  width: 7vw;
-  max-width: 7vh;
-  min-width: 50px;
-  min-height: 50px;
+@media only screen and (max-width: 767px) {
+  .project-section-list-of-technologies{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
 }
-
+.project-skill{
+  font-size: 2vh;
+  text-align: center;
+  border: 2px solid rgb(76, 76, 76);
+  background-color: rgb(76, 76, 76);
+  border-radius: 5px;
+  color: var(--titleColor);
+}
+@media only screen and (max-width: 767px) {
+  .project-skill{
+    position: relative;
+    right: 20%;
+    font-size: 1.3vh;
+  }
+}
+.project-skill:hover {
+  animation: bounce 1s infinite;
+}
   

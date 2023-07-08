@@ -47,9 +47,33 @@ body {
 .title {
   color: var(--titleColor);
   padding-top: 1.5vh;
-  font-size: 3vw;
+  font-size: 4.5vh;
   margin: 0px;
   margin-bottom: 26px;
   text-align: center;
 }
+
+/* This creates the bouncing animation when hovering over an icon.*/
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* This creates the rotation.*/
+@keyframes rotateY {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
 

@@ -4,35 +4,18 @@
 /* Manages the padding of the entire section. (Exterior of the section.)*/
 #about {
   padding: 20px;
+  background-color: var(--primaryBackground);
 }
 .about-parent-section{
-  height: 100vh;
-}
-/* This creates the bouncing animation when hovering over an icon.*/
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-/* This creates the rotation.*/
-@keyframes rotateY {
-  0% {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(1000px) rotateY(180deg);
-  }
-  100% {
-    transform: perspective(1000px) rotateY(360deg);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 .about-description{
+  text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  color: white;
-  font-size: 2.5vw;
+  color: var(--titleColor);
+  font-size: 2.5vh;
 }
