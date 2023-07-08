@@ -10,6 +10,7 @@
   
   .footer-section {
     width: 100%;
+    font-size: 3vh;
   }
   
   .footer-section.left-section {
@@ -27,7 +28,7 @@
   
   .footer-section ul li {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 3vh;
     font-weight: bold;
   }
   
