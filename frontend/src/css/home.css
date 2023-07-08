@@ -27,32 +27,32 @@
 }
 .homepage-name h1{
   position: absolute;
-  right: 10vw;
-  font-size: 70px;
+  right: 10vh;
+  font-size: 12vh;
   margin: 0px;
   top: 0vh;
 }
 .homepage-name h2{
   position: absolute;
-  top: 60px;
-  right: 10vw;
-  font-size: 70px;
+  top: 12vh;
+  right: 10vh;
+  font-size: 12vh;
   margin: 0px;
 }
 .homepage-name h3{
   position: absolute;
-  top: 200px;
-  right: 10vw;
-  font-size: 36px;
+  top: 40vh;
+  right: 10vh;
+  font-size: 6vh;
   margin: 0px;
 }
 /* Manages the resume button on the banner.*/
 .homepage-banner button{
   position: absolute;
   bottom: 10vh;
-  left: 10vw;
-  padding: 6px;
-  font-size: 24px;
+  left: 10vh;
+  padding: 1.5vh;
+  font-size: 3.5vh;
   color: var(--titleColor);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 6px;
@@ -60,23 +60,15 @@
   transition: transform 0.2s ease-in-out;
   transform: scale(1);
 }
-.github-link{
+.github-link, .linkedin-link{
   position: relative;
-  max-height: 50px;
-  right: 10vw;
-  top: 350px;
-  margin: 4px;
-}
-.linkedin-link{
-  position: relative;
-  max-height: 50px;
-  right: 10vw;
-  top: 350px;
-  margin: 4px;
+  max-height: 10vh;
+  right: 11vh;
+  top: 66vh;
+  margin: 1vh;
 }
 .homepage-banner img:hover{
   animation: bounce 1s infinite;
-
 }
 
 .homepage-banner button:hover {

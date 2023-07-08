@@ -8,8 +8,6 @@
 .skills-description{
   margin-left: 5%;
   margin-right: 5%;
-  color: white;
-  font-size: 16px;
 }
 /* Manages some variables and the size of the section.*/
 .skills-container{
@@ -36,17 +34,17 @@
 }
 /* Manages how the container is constructed and how it looks. Border, color etc.*/
 .skill-card {
-  max-height: 350px;
+  max-height: 100%;
   display: inline-block;
   color: var(--titleColor);
   border: solid;
   border-width: 2px;
   border-color: white;
   border-radius: 4px;
-  padding: 20px;
+  padding: 3.7vh;
 }
 .skill-card img{
-  max-height: 50px;
+  max-height: 10vh;
 }
 .skill-card img:hover{
   animation: rotateY 3s linear infinite, bounce 1s infinite;
@@ -64,12 +62,12 @@
 /* This manages the image.*/
 .spinning-icons img{
   animation: rotateY 3s linear infinite;
-  max-height: 50px;
+  max-height: 9.5vh;
 }
 /* Manages title such as 'Technical Skills'.*/  
 .skill-details h3 {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 3vh;
   margin-bottom: 5px;
 }
 /* Manages text describing list of skills.*/  
@@ -78,13 +76,19 @@
 }
 /* Manages the title glow of each container.*/
 .technical-title-text{
+  font-size: 2.5vh;
   text-shadow: var(--technicalShadow)
 }
 .frontend-title-text{
+  font-size: 2.5vh;
   text-shadow: var(--frontendShadow);
 }
 .database-title-text{
+  font-size: 2.5vh;
   text-shadow: var(--databaseShadow);
+}
+.skills-subtitle-text{
+  font-size: 2.5vh;
 }
 
 /* Manages mobile/decreased device screen.*/
