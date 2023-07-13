@@ -6,6 +6,58 @@ const Project = () => {
         <section>
             <h2 className="title">Projects</h2>
             <div className="project-section-title">
+                Google OAuth with NASA Image Generator
+            </div>
+            <div className="project-parent-section">
+                <div className="project-section">
+                    <img src={"/Portfolio-React-Website/GoogleOAuthThumbNail.png"} alt={"404.exe"} />
+                </div>
+                <div className="project-section">
+                    <div className="project-section-description">
+                        Allows users to login or create an account using their Google account. Uses Axios.js to make API calls to the NASA API for the daily image of the day. Note: Requires the client to allow cross-site tracking for Google OAuth to function.
+                    </div>
+                    <div className="project-section-subtitle">
+                        Technologies used:
+                    </div>
+                    <div className="project-section-list-of-technologies">
+                        <ul>
+                            <div className="project-skill">
+                                OAuth
+                            </div>
+                        </ul>
+                        <ul>
+                            <div className="project-skill">
+                                Passport.js
+                            </div>
+                        </ul>
+                        <ul>
+                            <div className="project-skill">
+                                Axios.js
+                            </div>
+                        </ul>
+                        <ul>
+                            <div className="project-skill">
+                                Restful API
+                            </div>
+                        </ul>
+                        <ul>
+                            <div className="project-skill">
+                                MERN
+                            </div>
+                        </ul>
+                        <ul>
+                            <div className="project-skill">
+                                JavaScript
+                            </div>
+                        </ul>
+                    </div>
+                    <div className="project-section-button-container">
+                        <a className="video-button" href={"https://nasa-daily-image-generator-5ze8.vercel.app/login"} target="_blank" rel="noopener noreferrer">Live</a>
+                        <a className="code-button" href={"https://github.com/Crod7/Google-OAuth-With-NASA-Daily-Image-Generator"} target="_blank" rel="noopener noreferrer">See Code</a>
+                    </div>
+                </div>
+            </div>
+            <div className="project-section-title">
                 Budgeting React App
             </div>
             <div className="project-parent-section">
@@ -52,7 +104,7 @@ const Project = () => {
                         </ul>
                     </div>
                     <div className="project-section-button-container">
-                        <a className="video-button" href={"https://youtu.be/08Ayvy9zRv8"} target="_blank" rel="noopener noreferrer">See Video</a>
+                        <a className="video-button" href={"https://budgetingreactapp.onrender.com/"} target="_blank" rel="noopener noreferrer">Live</a>
                         <a className="code-button" href={"https://github.com/Crod7/Budgeting-React-App"} target="_blank" rel="noopener noreferrer">See Code</a>
                     </div>
                 </div>

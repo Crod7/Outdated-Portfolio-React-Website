@@ -79,18 +79,36 @@
 /* Manages device screen.*/
 @media only screen and (max-width: 767px) {
   .homepage-name h1{
-    top: 40px;
-    font-size: 40px;
+    top: 1vh;
+    font-size: 5vh;
   }
   .homepage-name h2{
-    top: 80px;
-    font-size: 40px;
+    top: 6vh;
+    font-size: 5vh;
   }
   .homepage-name h3{
-    font-size: 22px;
+    top: 14vh;
+    font-size: 3vh;
+  }
+  .github-link, .linkedin-link{
+    right: 22vh;
+    top: 66vh;
   }
   .homepage-banner button{
-    bottom: 24vh;
-    font-size: 24px;
+    bottom: 10vh;
+    left: 3vh;
+  }
+  /* The is the title and sub-title displayed on the banenr.*/
+  .homepage-name {
+    text-align: left;
+  }
+  .homepage-name h1{
+    right: 28vh;
+  }
+  .homepage-name h2{
+    right: 18.7vh;
+  }
+  .homepage-name h3{
+    right: 28vh;
   }
 }

@@ -101,7 +101,7 @@ Manages the description of the program.
 }
 @media only screen and (max-width: 767px) {
   .project-section-description{
-    font-size: 1.5vh;
+    font-size: 2vh;
     margin: 0px;
   }
 }

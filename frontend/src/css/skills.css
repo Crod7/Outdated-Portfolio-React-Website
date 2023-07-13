@@ -44,7 +44,7 @@
   padding: 3.7vh;
 }
 .skill-card img{
-  max-height: 10vh;
+  max-height: 6vh;
 }
 .skill-card img:hover{
   animation: rotateY 3s linear infinite, bounce 1s infinite;
@@ -62,7 +62,6 @@
 /* This manages the image.*/
 .spinning-icons img{
   animation: rotateY 3s linear infinite;
-  max-height: 9.5vh;
 }
 /* Manages title such as 'Technical Skills'.*/  
 .skill-details h3 {
